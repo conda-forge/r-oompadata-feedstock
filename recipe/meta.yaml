@@ -1,4 +1,4 @@
-{% set version = '3.1.1' %}
+{% set version = "3.1.1" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -14,15 +14,15 @@ source:
 
 build:
   noarch: generic
-  merge_build_host: True  # [win]
-  number: 1001
+  merge_build_host: true  # [win]
+  number: 1002
   rpaths:
     - lib/R/lib/
     - lib/
 
 requirements:
   build:
-    - {{posix}}zip               # [win]
+    - {{ posix }}zip               # [win]
   host:
     - r-base
   run:
@@ -35,10 +35,9 @@ test:
 
 about:
   home: http://oompa.r-forge.r-project.org/
-  license: Apache (== 2.0)
-  summary: This is a data-only package to provide example data for other packages that are part
-    of the "Object-Oriented Microrray and Proteomics Analysis" suite of packages. These
-    are described in more detail at the package URL.
+  license: Apache-2.0
+  license_file: LICENSE-2.0.txt
+  summary: This is a data-only package to provide example data for other packages that are part of the "Object-Oriented Microrray and Proteomics Analysis" suite of packages. These are described in more detail at the package URL.
   license_family: APACHE
 
 extra:
