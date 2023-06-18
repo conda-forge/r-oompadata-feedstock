@@ -1,11 +1,11 @@
-About r-oompadata
-=================
+About r-oompadata-feedstock
+===========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-oompadata-feedstock/blob/main/LICENSE.txt)
 
 Home: http://oompa.r-forge.r-project.org/
 
 Package license: Apache-2.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-oompadata-feedstock/blob/main/LICENSE.txt)
 
 Summary: This is a data-only package to provide example data for other packages that are part of the "Object-Oriented Microrray and Proteomics Analysis" suite of packages. These are described in more detail at the package URL.
 
