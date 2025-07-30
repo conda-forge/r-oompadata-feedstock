@@ -1,4 +1,4 @@
-{% set version = "3.1.4" %}
+{% set version = "3.1.5" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,11 +9,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/oompaData_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/oompaData/oompaData_{{ version }}.tar.gz
-  sha256: 06252409a94f9eaf4ef723becd24d17e1ef7b495aada44853f4661d942292d3d
+  sha256: e40d94ce7bc07e43c27dfad0e56d82089941c22dd1ba1ce38a9a83f56a98a5e7
 
 build:
   noarch: generic
-  number: 1
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
@@ -22,9 +22,9 @@ requirements:
   build:
     - {{ posix }}zip               # [win]
   host:
-    - r-base
+    - r-base >=4.4.0
   run:
-    - r-base
+    - r-base >=4.4.0
 
 test:
   commands:
