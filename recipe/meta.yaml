@@ -1,4 +1,4 @@
-{% set version = "3.1.5" %}
+{% set version = "3.1.7" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/oompaData_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/oompaData/oompaData_{{ version }}.tar.gz
-  sha256: e40d94ce7bc07e43c27dfad0e56d82089941c22dd1ba1ce38a9a83f56a98a5e7
+  sha256: bdbc08781694b03fc1f8cf7fcdb298d99ae53b9303decf153cf8066eb0ba3cc7
 
 build:
   noarch: generic
